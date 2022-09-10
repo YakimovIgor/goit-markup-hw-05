@@ -754,3 +754,10 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
+.closed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
