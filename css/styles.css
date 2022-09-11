@@ -740,7 +740,7 @@ p {
   opacity: 1;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: visibility var(--animation-modal) opasity var(--animation-modal);
+  transition: visibility var(--animation-modal), opasity var(--animation-modal);
 }
 
 .modal {
@@ -769,6 +769,7 @@ p {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
