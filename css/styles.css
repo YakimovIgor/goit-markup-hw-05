@@ -98,8 +98,8 @@ p {
 
 .contacts:hover,
 .contacts:focus {
-  cursor: pointer;
   color: var(--accent-color);
+  transition: var(--animation-modal);
 }
 
 .hero-container {
@@ -242,9 +242,16 @@ p {
   color: var(--header-color);
 }
 
+.link:hover,
+.link:focus {
+  transition: var(--animation-modal);
+  color: var(--accent-color);
+}
+
 .contacts {
   display: flex;
   column-gap: 10px;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -350,6 +357,7 @@ p {
   justify-content: center;
   fill: var(--icon-color);
   border-radius: 50%;
+  transition: var(--animation-modal);
 }
 
 .section-team .link-picture:hover,
@@ -444,10 +452,6 @@ p {
 }
 
 .company-link {
-  fill: var(--icon-color);
-}
-
-.company-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,6 +461,8 @@ p {
 
   width: 170px;
   height: 92px;
+  fill: var(--icon-color);
+  transition: var(--animation-modal);
 }
 
 .company-link:focus,
@@ -505,6 +511,7 @@ p {
 .list-presentation .post-link {
   display: block;
   cursor: pointer;
+  transition: box-shadow var(--animation-modal);
 }
 
 .list-presentation {
@@ -520,7 +527,7 @@ p {
 .portfolio-nav-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  background: var(--accent-btn-color);
+  background-color: var(--accent-btn-color);
   color: var(--color);
 }
 
@@ -538,6 +545,8 @@ p {
   border-color: transparent;
   cursor: pointer;
   border-radius: 4px;
+  transition: var(--animation-modal), background-color var(--animation-modal),
+    color var(--animation-modal);
 }
 
 .active.button {
@@ -663,6 +672,7 @@ p {
 }
 
 .footer-contact {
+  transition: var(--animation-modal);
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -712,6 +722,7 @@ p {
   height: 44px;
   justify-content: center;
   align-items: center;
+  transition: var(--animation-modal);
 }
 
 .link-icon-white {
@@ -788,9 +799,7 @@ p {
   transform: translateY(100%);
   width: 100%;
   height: 100%;
-  background-color: var(--accent-color);
-  transition: background-color var(--animation-modal),
-    transform var(--animation-modal);
+  transition: transform var(--animation-modal);
   padding: 63px 24px;
 
   font-weight: 400;
