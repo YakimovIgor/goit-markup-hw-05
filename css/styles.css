@@ -786,7 +786,6 @@ p {
 }
 
 .post-image {
-  display: inline-block;
   position: relative;
   overflow: hidden;
 }
@@ -806,7 +805,7 @@ p {
   font-size: 18px;
   line-height: 28px;
   color: var(--color);
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .post-image:hover .post-text {
