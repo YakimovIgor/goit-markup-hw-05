@@ -239,6 +239,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  transition: color var(--animation-modal);
 }
 
 .link:hover,
@@ -255,12 +256,20 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: var(--animation-modal);
+  transition: color var(--animation-modal);
 }
 
 .mailto-link,
 .telephone-link {
   fill: currentColor;
+  transition: fill var(--animation-modal);
+}
+
+..mailto-link,
+.telephone-link:hover,
+.mailto-link,
+.telephone-link:focus {
+  fill: var(--accent-color);
 }
 
 .hero-section {
@@ -732,10 +741,6 @@ p {
 
 .link-icon-white {
   fill: var(--color);
-}
-
-.link-icon {
-  fill: var(--icon-color);
 }
 
 .footer-icon {
