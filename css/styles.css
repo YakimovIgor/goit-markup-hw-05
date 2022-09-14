@@ -363,16 +363,16 @@ p {
   width: 44px;
   height: 44px;
   justify-content: center;
-  fill: var(--icon-color);
+  color: var(--icon-color);
   border-radius: 50%;
   transition: background-color var(--animation-modal),
-    fill var(--animation-modal);
+    color var(--animation-modal);
 }
 
 .section-team .link-picture:hover,
 .section-team .link-picture:focus {
   background-color: var(--accent-color);
-  fill: var(--color);
+  color: var(--color);
 }
 
 .section-about {
@@ -458,13 +458,7 @@ p {
 .company-picture {
   width: 106px;
   height: 60px;
-  fill: var(--icon-color);
-  transition: fill var(--animation-modal);
-}
-
-.company-picture:hover,
-.company-picture:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .company-link {
@@ -477,11 +471,13 @@ p {
 
   width: 170px;
   height: 92px;
-  transition: border var(--animation-modal);
+  color: var(--icon-color);
+  transition: border var(--animation-modal), color var(--animation-modal);
 }
 
 .company-link:focus,
 .company-link:hover {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -741,6 +737,10 @@ p {
 
 .link-icon-white {
   fill: var(--color);
+}
+
+.link-icon {
+  fill: currentColor;
 }
 
 .footer-icon {
